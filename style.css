@@ -184,10 +184,16 @@ img {
 }
 
 .projectCard {
+    display:grid;
+    grid-template-rows:1fr 1fr 1fr;
     background-color: white;
     border-radius: 20px;
-    padding: 1em;
+    padding: 0.5em;
     box-shadow: 10px 10px 10px -5px #BCBCBC;
+    border-style: none none none solid;
+    border-width: 1em;
+    border-color:orange;
+    
 }
 
 .title p {
@@ -199,12 +205,15 @@ img {
 .projectCard .body {
     color:rgb(95, 95, 95);
     font-weight: 400;
-    font-size:small;
+    font-size:.75em;
 }
 
 .dummyIcons {
     display:grid;
-    justify-content: end;
+    grid-template-columns: 5fr 1fr 1fr 1fr;
+    align-items:center;
+    justify-items:end;
+    margin:0;
 }
 
 .rightContent > p {
