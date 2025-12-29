@@ -63,7 +63,7 @@ div {
 .rightContainer {
     display:grid;
     grid-template-rows: 0.5fr 10fr;
-    background-color: rgb(230, 241, 245);
+    background-color: rgb(199, 210, 214);
 }
 
 .header {
@@ -89,12 +89,58 @@ div {
     margin-bottom:0;
 }
 
+.search {
+    display:grid;
+    grid-template-columns:1fr 15fr;
+    gap:0;
+    align-items:center;
+    margin:1em;
+}
+
+.search p {
+    background-color:rgb(199, 210, 214);
+    width:100%;
+    height:1.5em;
+    border-radius: 1em;
+    margin:0;
+    
+}
+
+.profile {
+    display:grid;
+    grid-template-columns: 1fr 1.5fr 4fr;
+    font-size:1em;
+    align-items: center;
+}
+
+img {
+    width:2em;
+    clip-path: circle();
+}
+
+.profile p {
+    font-size:0.75em;
+}
 .greeting {
-    font-size:small;
+    font-size:0.75em;
+    margin-bottom: 0;
 }
 
 .welcome {
     font-weight: 900;
+    display:grid;
+    grid-template-columns:1fr 5fr;
+    justify-content: center;
+    padding-left:1em;
+
+}
+
+.welcomeText > p {
+    margin-top:0;
+}
+.welcome img {
+    width:4em;
+    margin:0;
 }
 
 .buttons ul {
@@ -116,7 +162,7 @@ div {
 .mainContent {
     display:grid;
     grid-template-columns: 3fr 1fr;
-    background-color: rgb(230, 241, 245);
+    background-color: rgb(199, 210, 214);
     font-size:0.85em;
     margin:0.5em;
 }
