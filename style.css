@@ -1,0 +1,22 @@
+body {
+    display:grid;
+    grid-template-columns: 1fr 4fr;
+    grid-auto-flow: row;
+}
+body > div {
+    outline: solid rgb(27, 151, 48) 1px;
+}
+.sidebar {
+    background-color: rgb(81, 177, 255);
+    color:white;
+    font-weight: 700;
+    padding:1.5em;
+}
+.sidebar ul {
+    list-style-type: none;
+    padding-inline-start: 0;
+}
+
+.sidebar li {
+    margin:0.5em;
+}
