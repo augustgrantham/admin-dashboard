@@ -1,14 +1,15 @@
 /* prevent weird auto styling */
 body {
     margin:0;
+    height:90vh;
 }
 
 /* page is a css grid, with the first column holding the side bar, and the second column holding the header and main content area */
 .dashboard {
     display:grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 5fr;
     grid-auto-flow:column;
-    height:100vh;
+    height:90vh;
 }
 
 /*debugging styling */
@@ -19,8 +20,8 @@ div {
     background-color: rgb(81, 177, 255);
     color:white;
     font-weight: 800;
-    font-size: large;
-    padding:1.5em;
+    font-size: 1em;
+    padding:1em;
 }
 .sidebar ul {
     list-style-type: none;
@@ -41,9 +42,9 @@ div {
 .header {
     box-shadow: 0 4px 4px -3px black;
     display:grid;
-    grid-template-rows: 1fr 2fr;
+    grid-template-rows: 0.5fr 1fr;
     background-color: white;
-    margin-bottom:1em;
+    margin-bottom:0.5em;
     padding:1em;
 }
 
@@ -56,7 +57,7 @@ div {
 .bottomHeader {
     display:grid;
     grid-template-columns: 1.5fr 1fr;
-    margin-bottom: 0;
+    padding:0;
 }
 
 .greeting {
@@ -85,18 +86,20 @@ div {
 
 .mainContent {
     display:grid;
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 3fr 1fr;
     background-color: rgb(230, 241, 245);
-    padding:1em;
+
+    font-size:0.85em;
+    margin:1em;
 }
 
 .leftContent > p {
-    font-size: large;
+    font-size: 1.25em;
     font-weight:700;
 }
 
 .leftContent {
-    margin-right:1em;
+    margin-right:2em;
 }
 
 .projectContainer {
@@ -110,12 +113,13 @@ div {
     background-color: white;
     border-radius: 20px;
     padding: 1em;
-    box-shadow: 1px 1px 1px;
+    box-shadow: 10px 10px 10px -5px #BCBCBC;
 }
 
-.title {
-    font-size:large;
+.title p {
+    font-size:1em;
     font-weight:600;
+    margin-bottom: 0.2em;
 }
 
 .projectCard .body {
@@ -130,10 +134,40 @@ div {
 }
 
 .rightContent > p {
-    font-size: large;
+    font-size: 1.25em;
     font-weight:700;
 }
 
-.rightContent ul {
-    list-style-type:none;
+
+.announcementCardContainer {
+    background-color:white;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px -5px #BCBCBC;
+    padding:1em;
+}
+
+.trendingCardContainer {
+    background-color:white;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px -5px #BCBCBC;
+    padding:1.5em;
+    display:grid;
+    grid-template-rows: repeat(2, 1fr);
+}
+.announcementTitle p {
+    font-weight: 700;
+    font-size:0.9em;
+    margin-bottom: 0.2em;
+}
+
+.announcementBody p {
+    color:rgb(95, 95, 95);
+    font-weight: 400;
+    font-size:0.75em;
+    margin: 0;
+}
+
+.profileCard {
+    display:grid;
+    grid-template-columns: 1fr 2fr;
 }
