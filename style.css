@@ -12,8 +12,8 @@ body {
 }
 
 /*debugging styling */
-.dashboard > div {
-    outline: solid rgb(27, 151, 48) 2px;
+div {
+    /*outline: solid rgb(27, 151, 48) 2px;*/
 }
 .sidebar {
     background-color: rgb(81, 177, 255);
@@ -35,15 +35,16 @@ body {
 .rightContainer {
     display:grid;
     grid-template-rows: 1fr 5fr;
-    margin:1em;
-    padding:1em;
+    background-color: rgb(230, 241, 245);
 }
 
 .header {
-    box-shadow: 0 4px 3px -2px black;
+    box-shadow: 0 4px 4px -3px black;
     display:grid;
     grid-template-rows: 1fr 2fr;
-    margin-bottom:0;
+    background-color: white;
+    margin-bottom:1em;
+    padding:1em;
 }
 
 .topHeader {
@@ -56,11 +57,6 @@ body {
     display:grid;
     grid-template-columns: 1.5fr 1fr;
     margin-bottom: 0;
-}
-
-.mainContent {
-    display:grid;
-    grid-template-columns: 3fr 1fr;
 }
 
 .greeting {
@@ -85,4 +81,59 @@ body {
     padding:0.5em;
     color:white;
     font-weight:600;
+}
+
+.mainContent {
+    display:grid;
+    grid-template-columns: 4fr 1fr;
+    background-color: rgb(230, 241, 245);
+    padding:1em;
+}
+
+.leftContent > p {
+    font-size: large;
+    font-weight:700;
+}
+
+.leftContent {
+    margin-right:1em;
+}
+
+.projectContainer {
+    display:grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap:1em;
+}
+
+.projectCard {
+    background-color: white;
+    border-radius: 20px;
+    padding: 1em;
+    box-shadow: 1px 1px 1px;
+}
+
+.title {
+    font-size:large;
+    font-weight:600;
+}
+
+.projectCard .body {
+    color:rgb(95, 95, 95);
+    font-weight: 400;
+    font-size:small;
+}
+
+.dummyIcons {
+    display:grid;
+    justify-content: end;
+}
+
+.rightContent > p {
+    font-size: large;
+    font-weight:700;
+}
+
+.rightContent ul {
+    list-style-type:none;
 }
